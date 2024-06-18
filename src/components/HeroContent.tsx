@@ -1,4 +1,5 @@
 import '../styles/HeroContent.modules.css'
+import sourceLogo from '../assets/icon-source.svg'
 
 const HeroContent: React.FC = () => {
   return (
@@ -11,7 +12,10 @@ const HeroContent: React.FC = () => {
         rock that is the primary constituent of the ocean floors.
       </p>
       <p className="hero__source">
-        Source: <a href="https://www.facebook.com/">Wikipédia</a>
+        Source:{' '}
+        <a href="https://www.facebook.com/">
+          Wikipédia <img src={sourceLogo} alt="COucou" />
+        </a>
       </p>
       <div className="flex-column">
         <button type="button" className="hero__button">

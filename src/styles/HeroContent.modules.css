@@ -13,6 +13,10 @@
 
   .hero__source {
     color: hsl(var(--clr-neutral-200) / 0.8);
+    img {
+      display: inline-block;
+      margin-left: 5px;
+    }
     a {
       text-decoration: underline;
       font-weight: var(--fw-bold);

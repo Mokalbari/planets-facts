@@ -1,0 +1,17 @@
+.information {
+  justify-content: space-between;
+  gap: 1.875rem;
+  margin-block: 5.5rem;
+
+  .information__card {
+    /* max-width: 255px; */
+    border: 1px solid hsl(var(--clr-neutral-200));
+    padding: 1.25rem;
+    flex: 1;
+
+    h3 {
+      color: hsl(var(--clr-neutral-050) / 0.5);
+      margin-bottom: 0.5em;
+    }
+  }
+}
