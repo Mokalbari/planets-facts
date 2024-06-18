@@ -2,8 +2,6 @@
   position: relative;
 
   .hero__image-main {
-    width: 450px;
-    height: auto;
     object-fit: cover;
     position: relative;
   }

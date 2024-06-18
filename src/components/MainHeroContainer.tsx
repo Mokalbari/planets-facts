@@ -4,7 +4,7 @@ import HeroImage from './HeroImage'
 
 const MainHeroContainer: React.FC = () => {
   return (
-    <main className="container flex-row">
+    <main className="container flex-row main">
       <HeroImage />
       <HeroContent />
     </main>
