@@ -16,3 +16,66 @@
   --ff-header: "Antonio", sans-serif;
   --ff-main: "League Spartan", sans-serif;
 }
+
+/* GENERAL STYLING */
+
+body {
+  background: var(--clr-neutral-900) url("/public/background-stars.svg") center;
+  font-family: var(--ff-main);
+  font-size: 14px;
+  color: var(--clr-neutral-050);
+}
+
+h1 {
+  font-family: var(--ff-header);
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--ff-header);
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2.6px;
+}
+
+h4 {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.global__button {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2.57px;
+  background-color: none;
+  border: 1px solid var(--clr-neutral-200);
+}
+
+/* UTILITY CLASSES */
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+}
