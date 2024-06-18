@@ -1,0 +1,19 @@
+.hero__image {
+  position: relative;
+
+  .hero__image-main {
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .hero__image-secondary {
+    width: 163px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(10%);
+  }
+}

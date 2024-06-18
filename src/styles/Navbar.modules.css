@@ -6,9 +6,11 @@
 
   .header__menu {
     gap: 2.0625rem;
+    color: hsl(var(--clr-neutral-050) / 0.8);
 
     &:hover {
       cursor: pointer;
     }
   }
+  margin-bottom: 10rem;
 }
