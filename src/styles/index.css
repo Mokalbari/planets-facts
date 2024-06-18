@@ -24,7 +24,7 @@ body {
     center;
   font-family: var(--ff-main);
   font-size: 14px;
-  color: var(--clr-neutral-050);
+  color: hsl(var(--clr-neutral-050));
 }
 
 h1 {
