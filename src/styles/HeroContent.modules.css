@@ -36,6 +36,10 @@
     border: 1px solid hsl(var(--clr-neutral-200) / 0.8);
     text-align: left;
     margin-bottom: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .hero__number-list {
