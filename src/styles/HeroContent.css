@@ -1,0 +1,113 @@
+:root {
+  --clr-neutral-050: 0 0% 100%;
+  --clr-neutral-200: 240 6% 54%;
+  --clr-neutral-500: 240 17% 26%;
+  --clr-neutral-900: 240 67% 8%;
+
+  --clr-accent-lightblue: 194 48% 49%;
+  --clr-accent-darkblue: 222 87% 56%;
+  --clr-accent-yellow: 33 82% 61%;
+  --clr-accent-brique: 10 63% 51%;
+  --clr-accent-red: 2 68% 53%;
+  --clr-accent-orange: 17 73% 46%;
+  --clr-accent-purple: 263 67% 51%;
+  --clr-accent-lightgreen: 169 73% 44%;
+
+  --ff-header: "Antonio", sans-serif;
+  --ff-main: "League Spartan", sans-serif;
+
+  --fw-bold: 800;
+}
+
+.hero {
+  max-width: 350px;
+
+  .hero__title {
+    margin-bottom: 0.5em;
+  }
+
+  .hero__content {
+    font-size: 1.125rem;
+    margin-bottom: 1em;
+    color: hsl(var(--clr-neutral-050) / 0.8);
+  }
+
+  .hero__source {
+    color: hsl(var(--clr-neutral-200) / 0.8);
+    img {
+      display: inline-block;
+      margin-left: 5px;
+    }
+    a {
+      text-decoration: underline;
+      font-weight: var(--fw-bold);
+    }
+    margin-bottom: 1.5em;
+  }
+
+  .hero__button {
+    font-size: 0.75rem;
+    padding: 12px;
+    font-weight: 600;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.57px;
+    background-color: hsl(var(--clr-neutral-900));
+    color: hsl(var(--clr-neutral-050));
+    border: 1px solid hsl(var(--clr-neutral-200) / 0.8);
+    text-align: left;
+    margin-bottom: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .hero__number-list {
+    font-family: var(--ff-main);
+    font-size: 1rem;
+    font-weight: var(--fw-bold);
+    margin-inline: 1.75rem;
+    color: hsl(var(--clr-neutral-050) / 0.5);
+  }
+}
+
+#mercury {
+  background-color: hsl(var(--clr-accent-lightblue));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#venus {
+  background-color: hsl(var(--clr-accent-yellow));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#earth {
+  background-color: hsl(var(--clr-accent-purple));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#mars {
+  background-color: hsl(var(--clr-accent-red));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#jupiter {
+  background-color: hsl(var(--clr-accent-brique));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#saturn {
+  background-color: hsl(var(--clr-accent-orange));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#uranus {
+  background-color: hsl(var(--clr-accent-lightgreen));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#neptune {
+  background-color: hsl(var(--clr-accent-darkblue));
+  color: hsl(var(--clr-neutral-050));
+}

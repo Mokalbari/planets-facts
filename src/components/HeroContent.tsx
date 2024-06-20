@@ -1,8 +1,9 @@
-import '../styles/HeroContent.modules.css'
+import '../styles/HeroContent.css'
 import sourceLogo from '../assets/icon-source.svg'
 import type { HeroProps } from '../types/HeroProps'
 
 const HeroContent: React.FC<HeroProps> = ({
+  planet,
   information,
   setInformation,
   currentPlanet,
@@ -26,15 +27,30 @@ const HeroContent: React.FC<HeroProps> = ({
         </a>
       </p>
       <div className="flex-column">
-        <button type="button" className="hero__button" onClick={handleClick}>
+        <button
+          type="button"
+          className={'hero__button'}
+          id={`${information.includes('overview') && planet.toLowerCase()}`}
+          onClick={handleClick}
+        >
           <span className="hero__number-list">01</span>
           Overview
         </button>
-        <button type="button" className="hero__button" onClick={handleClick}>
+        <button
+          type="button"
+          className="hero__button"
+          id={`${information.includes('structure') && planet.toLowerCase()}`}
+          onClick={handleClick}
+        >
           <span className="hero__number-list">02</span>
           Internal Structure
         </button>
-        <button type="button" className="hero__button" onClick={handleClick}>
+        <button
+          type="button"
+          className="hero__button"
+          id={`${information.includes('geology') && planet.toLowerCase()}`}
+          onClick={handleClick}
+        >
           <span className="hero__number-list">03</span>
           Surface Geology
         </button>
