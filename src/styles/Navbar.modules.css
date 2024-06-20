@@ -20,4 +20,9 @@
     }
   }
   margin-bottom: 10rem;
+
+  @media (width <= 900px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
