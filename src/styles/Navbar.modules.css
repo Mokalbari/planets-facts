@@ -4,6 +4,10 @@
   padding: 1.375rem 2rem;
   border-bottom: 1px solid hsl(var(--clr-neutral-200) / 0.7);
 
+  h2 {
+    font-size: 1.75rem;
+  }
+
   .header__menu {
     gap: 2.0625rem;
     color: hsl(var(--clr-neutral-050) / 0.8);

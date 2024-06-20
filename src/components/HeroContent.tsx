@@ -3,7 +3,6 @@ import sourceLogo from '../assets/icon-source.svg'
 import type { HeroProps } from '../types/HeroProps'
 
 const HeroContent: React.FC<HeroProps> = ({
-  planet,
   information,
   setInformation,
   currentPlanet,
@@ -13,14 +12,6 @@ const HeroContent: React.FC<HeroProps> = ({
     const array: string[] = string.split(' ')
     setInformation(array.length < 2 ? 'overview' : array[1].toLowerCase())
   }
-
-  // const chooseColore = (planet) => {
-  //   switch(planet) {
-  //     case "mercury":
-  //       ""
-  //   }
-
-  // }
 
   return (
     <div className="hero">

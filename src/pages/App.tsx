@@ -21,7 +21,7 @@ const App: React.FC = () => {
         setInformation={setInformation}
         currentPlanet={currentPlanet}
       />
-      <Information information={information} />
+      <Information currentPlanet={currentPlanet} />
     </>
   )
 }
