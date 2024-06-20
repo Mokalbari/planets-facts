@@ -9,7 +9,10 @@ const Navbar: React.FC<Navbar> = ({ setPlanet }) => {
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     const value: string = (event.target as HTMLElement).innerText
     const formatedValue: string = value.charAt(0) + value.slice(1).toLowerCase()
-    setPlanet(formatedValue)
+    console.log(formatedValue)
+    if (formatedValue.length <= 7) {
+      setPlanet(formatedValue)
+    }
   }
 
   const handleKey = () => console.log('Key not yet supported')
