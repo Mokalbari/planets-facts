@@ -1,8 +1,10 @@
 .hero__image {
   position: relative;
+  max-width: 500px;
+  height: auto;
 
   .hero__image-main {
-    object-fit: cover;
+    object-fit: contain;
     position: relative;
   }
 

@@ -9,7 +9,7 @@ const Navbar: React.FC<Navbar> = ({ setPlanet }) => {
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     const value: string = (event.target as HTMLElement).innerText
     const formatedValue: string = value.charAt(0) + value.slice(1).toLowerCase()
-    console.log(formatedValue)
+
     if (formatedValue.length <= 7) {
       setPlanet(formatedValue)
     }
