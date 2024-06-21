@@ -25,7 +25,8 @@ const Navbar: React.FC<Navbar> = ({ setPlanet }) => {
 
   return (
     <header className="header flex-row">
-      <div className="header__header">
+      <h2 className="desktop-tablet-only">The Planets</h2>
+      <div className="header__header--mobile">
         <h2>The planets</h2>
         {/* This is the menu mobile-only */}
         <img
@@ -51,8 +52,8 @@ const Navbar: React.FC<Navbar> = ({ setPlanet }) => {
             />
           </div>
           <nav>
-            <menu>
-              {data.map((planet, index) => {
+            <menu onClick={handleClick} onKeyUp={handleKey}>
+              {data.map(planet => {
                 return (
                   <li key={planet.name}>
                     <div className="burger__planet-list">

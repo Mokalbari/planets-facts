@@ -4,11 +4,14 @@
   padding: 1.375rem 2rem;
   border-bottom: 1px solid hsl(var(--clr-neutral-200) / 0.5);
 
-  .header__header {
+  .header__header--mobile {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
   }
 
   h2 {
@@ -55,10 +58,6 @@
   &:hover {
     cursor: pointer;
   }
-
-  @media screen and (min-width: 600px) {
-    display: none;
-  }
 }
 
 .burger__menu-container {
@@ -92,6 +91,12 @@
     h4 {
       font-size: 1rem;
     }
+  }
+}
+
+.desktop-tablet-only {
+  @media (max-width: 600px) {
+    display: none;
   }
 }
 
