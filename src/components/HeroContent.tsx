@@ -16,17 +16,19 @@ const HeroContent: React.FC<HeroProps> = ({
 
   return (
     <div className="hero">
-      <h1 className="hero__title">{currentPlanet.name}</h1>
-      <p className="hero__content">
-        {(currentPlanet as any)[information].content}
-      </p>
-      <p className="hero__source">
-        Source:{' '}
-        <a href={(currentPlanet as any)[information].source}>
-          Wikipédia <img src={sourceLogo} alt="Lien vers wikipédia" />
-        </a>
-      </p>
-      <div className="flex-column">
+      <div className="hero__container">
+        <h1 className="hero__title">{currentPlanet.name}</h1>
+        <p className="hero__content">
+          {(currentPlanet as any)[information].content}
+        </p>
+        <p className="hero__source">
+          Source:{' '}
+          <a href={(currentPlanet as any)[information].source}>
+            Wikipédia <img src={sourceLogo} alt="Lien vers wikipédia" />
+          </a>
+        </p>
+      </div>
+      <div className="hero__button-container flex-column">
         <button
           type="button"
           className={'hero__button'}
