@@ -15,7 +15,7 @@ const Navbar: React.FC<Navbar> = ({ setPlanet }) => {
     const value: string = (event.target as HTMLElement).innerText
     const formatedValue: string = value.charAt(0) + value.slice(1).toLowerCase()
 
-    if (formatedValue.length <= 7) {
+    if (formatedValue.length <= 7 && formatedValue.length > 0) {
       setPlanet(formatedValue)
     }
   }
