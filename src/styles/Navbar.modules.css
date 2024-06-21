@@ -4,6 +4,13 @@
   padding: 1.375rem 2rem;
   border-bottom: 1px solid hsl(var(--clr-neutral-200) / 0.5);
 
+  .header__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   h2 {
     font-size: 1.75rem;
   }
@@ -40,5 +47,113 @@
       display: none;
     }
     margin: 0;
+    justify-content: space-between;
   }
+}
+
+.mobile-only {
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+
+.burger__menu-container {
+  width: 100svw;
+  min-height: fit-content;
+  background: hsl(var(--clr-neutral-900));
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  .burger__header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.375rem 2rem;
+    border-bottom: 1px solid hsl(var(--clr-neutral-200) / 0.5);
+    margin-bottom: 2.75rem;
+  }
+
+  .burger__planet-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-inline: 2rem;
+    padding-block: 1.25rem;
+    border-bottom: 1px solid hsl(var(--clr-neutral-200) / 0.5);
+    img {
+      margin-left: auto;
+    }
+
+    h4 {
+      font-size: 1rem;
+    }
+  }
+}
+
+#Mercury {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-lightblue));
+}
+
+#Venus {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-yellow));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#Earth {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-purple));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#Mars {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-red));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#Jupiter {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-brique));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#Saturn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-orange));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#Uranus {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-lightgreen));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#Neptune {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(var(--clr-accent-darkblue));
+  color: hsl(var(--clr-neutral-050));
 }
