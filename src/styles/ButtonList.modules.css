@@ -1,0 +1,59 @@
+.button-list {
+  display: flex;
+  justify-content: space-around;
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  border-bottom: 1px solid hsl(var(--clr-neutral-050) / 0.5);
+
+  .button-list__button {
+    border: none;
+    border-bottom: 5px solid transparent;
+    background: none;
+    color: hsl(var(--clr-neutral-050));
+    text-transform: uppercase;
+    font-family: var(--ff-head);
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1.5rem 0 1rem 0;
+  }
+}
+
+#mercury-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-lightblue));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#venus-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-yellow));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#earth-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-purple));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#mars-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-red));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#jupiter-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-brique));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#saturn-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-orange));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#uranus-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-lightgreen));
+  color: hsl(var(--clr-neutral-050));
+}
+
+#neptune-mobile {
+  border-bottom: 5px solid hsl(var(--clr-accent-darkblue));
+  color: hsl(var(--clr-neutral-050));
+}

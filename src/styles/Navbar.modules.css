@@ -26,7 +26,7 @@
   @media (min-width: 600px) and (max-width: 1000px) {
     flex-flow: column wrap;
     gap: 1.5rem;
-    
+
     .header__menu {
       gap: 1rem;
       h4 {
@@ -39,5 +39,6 @@
     .header__menu {
       display: none;
     }
+    margin: 0;
   }
 }

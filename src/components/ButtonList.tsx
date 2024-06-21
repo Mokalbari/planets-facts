@@ -14,11 +14,11 @@ const ButtonList: React.FC<HeroProps> = ({
   }
 
   return (
-    <div className="button-list flex-row">
+    <div className="button-list">
       <button
         type="button"
         className={'button-list__button'}
-        id={`${information.includes('overview') && planet.toLowerCase()}`}
+        id={`${information.includes('overview') && `${planet.toLowerCase()}-mobile`}`}
         onClick={handleClick}
       >
         Overview
@@ -26,7 +26,7 @@ const ButtonList: React.FC<HeroProps> = ({
       <button
         type="button"
         className="button-list__button"
-        id={`${information.includes('structure') && planet.toLowerCase()}`}
+        id={`${information.includes('structure') && `${planet.toLowerCase()}-mobile`}`}
         onClick={handleClick}
       >
         Structure
@@ -34,7 +34,7 @@ const ButtonList: React.FC<HeroProps> = ({
       <button
         type="button"
         className="button-list__button"
-        id={`${information.includes('geology') && planet.toLowerCase()}`}
+        id={`${information.includes('geology') && `${planet.toLowerCase()}-mobile`}`}
         onClick={handleClick}
       >
         Surface
