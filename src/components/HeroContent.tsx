@@ -1,4 +1,4 @@
-import '../styles/HeroContent.css'
+import '../styles/HeroContent.modules.css'
 import sourceLogo from '../assets/icon-source.svg'
 import type { HeroProps } from '../types/HeroProps'
 
