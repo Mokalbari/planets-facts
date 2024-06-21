@@ -12,6 +12,16 @@
     h3 {
       color: hsl(var(--clr-neutral-050) / 0.5);
       margin-bottom: 0.5em;
+
+    }
+  }
+  @media (min-width: 600px) and (max-width:1000px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 0.5rem;
     }
   }
 }
