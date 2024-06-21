@@ -68,6 +68,30 @@
       flex-shrink: 0.9;
     }
   }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 10vh;
+
+    .hero__title {
+      font-size: 2.5rem;
+    }
+
+    .hero__content {
+      font-size: 0.875rem;
+    }
+
+    .hero__source {
+      font-size: 1rem;
+    }
+
+    .hero__button-container {
+      display: none;
+    }
+  }
 }
 
 #mercury {

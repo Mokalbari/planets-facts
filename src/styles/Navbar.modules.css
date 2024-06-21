@@ -2,7 +2,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.375rem 2rem;
-  border-bottom: 1px solid hsl(var(--clr-neutral-200) / 0.7);
+  border-bottom: 1px solid hsl(var(--clr-neutral-200) / 0.5);
 
   h2 {
     font-size: 1.75rem;
@@ -23,7 +23,7 @@
   }
   margin-bottom: 10rem;
 
-  @media (600px <= width <= 1000px) {
+  @media (min-width: 600px) and (max-width: 1000px) {
     flex-flow: column wrap;
     gap: 1.5rem;
     
@@ -32,6 +32,12 @@
       h4 {
         font-size: 11px;
       }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .header__menu {
+      display: none;
     }
   }
 }
