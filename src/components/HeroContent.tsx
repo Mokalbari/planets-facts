@@ -12,12 +12,16 @@ const HeroContent: React.FC<HeroProps> = ({
     const string: string = (event.target as HTMLButtonElement).innerText
     const array: string[] = string.split(' ')
     setInformation(array.length < 2 ? 'overview' : array[1].toLowerCase())
+
+    if (!currentPlanet) {
+      return "null"
+    }
   }
 
   return (
     <div className="hero">
       <div className="hero__container">
-        <h1 className="hero__title">{currentPlanet.name}</h1>
+        <h1 className="hero__title">{currentPlanet!.name}</h1>
         <p className="hero__content">
           {(currentPlanet as any)[information].content}
         </p>

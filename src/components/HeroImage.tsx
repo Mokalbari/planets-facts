@@ -28,14 +28,14 @@ import saturn from '../assets/planet-saturn.svg'
 import neptune from '../assets/planet-neptune.svg'
 
 // Define types for the different images each planet can have
-type PlanetImages = {
+export type PlanetImages = {
   overview: string
   structure: string
   geology: string
 }
 
 // Define a type for all the possible planets and their associated images
-type Images = {
+export type Images = {
   mercury: PlanetImages
   venus: PlanetImages
   earth: PlanetImages
@@ -90,12 +90,12 @@ const images: Images = {
 }
 
 interface HeroImageProps {
-  planet: keyof Images
-  information: keyof Images
+  planet: keyof Images | string
+  information: keyof PlanetImages | string
 }
 
 const HeroImage: React.FC<HeroImageProps> = ({ planet, information }) => {
-  const currentPlanet = planet.toLowerCase()
+  const currentPlanet = planet.toLowerCase() as keyof Images
 
   return (
     <div className="hero__image">

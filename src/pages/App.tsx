@@ -22,13 +22,17 @@ const App: React.FC = () => {
         information={information}
         setInformation={setInformation}
       />
-      <MainHeroContainer
-        planet={planet}
-        information={information}
-        setInformation={setInformation}
-        currentPlanet={currentPlanet}
-      />
-      <Information currentPlanet={currentPlanet} />
+      {currentPlanet && (
+        <>
+          <MainHeroContainer
+            planet={planet}
+            information={information}
+            setInformation={setInformation}
+            currentPlanet={currentPlanet}
+          />
+          <Information currentPlanet={currentPlanet} />
+        </>
+      )}
     </>
   )
 }
