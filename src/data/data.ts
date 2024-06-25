@@ -1,4 +1,6 @@
-type PLanetType = "Mercury" | "Venus" | "Earth" | "Mars" | "Jupiter" | "Saturn" | "Uranus" | "Neptune"
+import type { Planet } from "../types/Planet"
+
+export type PlanetType = "Mercury" | "Venus" | "Earth" | "Mars" | "Jupiter" | "Saturn" | "Uranus" | "Neptune"
 export const planets: Record<PlanetType, Planet> = {
   "Mercury": {
     "name": "Mercury",
@@ -24,34 +26,7 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-mercury.png"
     }
   },
-}
-
-[
-  {
-    "name": "Mercury",
-    "overview": {
-      "content": "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.",
-      "source": "https://en.wikipedia.org/wiki/Mercury_(planet)"
-    },
-    "structure": {
-      "content": "Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's density.",
-      "source": "https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
-    },
-    "geology": {
-      "content": "Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than either Mars's or the Moon’s.",
-      "source": "https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
-    },
-    "rotation": "58.6 Days",
-    "revolution": "87.97 Days",
-    "radius": "2,439.7 KM",
-    "temperature": "430°c",
-    "images": {
-      "planet": "../assets/planet-mercury.svg",
-      "internal": "../assets/planet-mercury-internal.svg",
-      "geology": "../assets/geology-mercury.png"
-    }
-  },
-  {
+  "Venus": {
     "name": "Venus",
     "overview": {
       "content": "Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be, on rare occasions, visible to the naked eye in broad daylight.",
@@ -75,7 +50,7 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-venus.png"
     }
   },
-  {
+  "Earth": {
     "name": "Earth",
     "overview": {
       "content": "Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.",
@@ -99,7 +74,7 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-earth.png"
     }
   },
-  {
+  "Mars": {
     "name": "Mars",
     "overview": {
       "content": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the \"Red Planet\".",
@@ -123,7 +98,7 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-mars.png"
     }
   },
-  {
+  "Jupiter": {
     "name": "Jupiter",
     "overview": {
       "content": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.",
@@ -147,7 +122,7 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-jupiter.png"
     }
   },
-  {
+  "Saturn": {
     "name": "Saturn",
     "overview": {
       "content": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.",
@@ -171,7 +146,7 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-saturn.png"
     }
   },
-  {
+  "Uranus": {
     "name": "Uranus",
     "overview": {
       "content": "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
@@ -195,7 +170,7 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-uranus.png"
     }
   },
-  {
+  "Neptune": {
     "name": "Neptune",
     "overview": {
       "content": "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.",
@@ -219,4 +194,4 @@ export const planets: Record<PlanetType, Planet> = {
       "geology": "../assets/geology-neptune.png"
     }
   }
-]
+}

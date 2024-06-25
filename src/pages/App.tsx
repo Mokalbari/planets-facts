@@ -1,18 +1,16 @@
-import Navbar from '../components/Navbar'
-import MainHeroContainer from '../components/MainHeroContainer'
-import Information from '../components/Information'
-import ButtonList from '../components/ButtonList'
+import Navbar from "../components/Navbar";
+import MainHeroContainer from "../components/MainHeroContainer";
+import Information from "../components/Information";
+import ButtonList from "../components/ButtonList";
 
-import { useState } from 'react'
-import data from '../data/data.json'
-import type { Planet } from '../types/Planet'
+import { useState } from "react";
 
-const App: React.FC = () => {
-  const [planet, setPlanet] = useState<string>('Earth')
-  const [information, setInformation] = useState<string>('overview')
-  const currentPlanet: Planet | undefined = data.find(
-    (element: Planet) => element.name === planet,
-  )
+import { planets, type PlanetType } from "../data/data";
+
+const App = () => {
+  const [planet, setPlanet] = useState<PlanetType>("Earth");
+  const [information, setInformation] = useState("overview");
+  const currentPlanet = planets[planet];
 
   return (
     <>
@@ -34,7 +32,7 @@ const App: React.FC = () => {
         </>
       )}
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

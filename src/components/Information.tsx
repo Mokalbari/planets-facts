@@ -1,8 +1,8 @@
-import '../styles/Information.modules.css'
-import type { Planet } from '../types/Planet'
+import "../styles/Information.modules.css";
+import type { Planet } from "../types/Planet";
 
 interface Information {
-  currentPlanet: Planet
+  currentPlanet: Planet;
 }
 
 const Information: React.FC<Information> = ({ currentPlanet }) => {
@@ -25,7 +25,7 @@ const Information: React.FC<Information> = ({ currentPlanet }) => {
         <h2>{currentPlanet.temperature}</h2>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Information
+export default Information;
