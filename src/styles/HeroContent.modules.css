@@ -42,6 +42,10 @@
     }
   }
 
+  .hero__button.active {
+    background: red;
+  }
+
   .hero__number-list {
     font-family: var(--ff-main);
     font-size: 1rem;

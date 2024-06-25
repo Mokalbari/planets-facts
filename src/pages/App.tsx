@@ -1,29 +1,34 @@
 import Navbar from "../components/Navbar";
 import MainHeroContainer from "../components/MainHeroContainer";
 import Information from "../components/Information";
-import ButtonList from "../components/ButtonList";
+// import ButtonList from "../components/ButtonList";
 
 import { useState } from "react";
 
 import { planets, type PlanetType } from "../data/data";
+import ButtonList from "../components/ButtonList";
 
 const App = () => {
-  const [planet, setPlanet] = useState<PlanetType>("Earth");
-  const [information, setInformation] = useState("overview");
+  const [planet, setPlanet] = useState<PlanetType>("Mercury");
+  const [information, setInformation] = useState(0);
   const currentPlanet = planets[planet];
+
+  const handlePlanetChange = (planetType: PlanetType) => {
+    setPlanet(planetType);
+    setInformation(0);
+  };
 
   return (
     <>
-      <Navbar setPlanet={setPlanet} />
+      <Navbar setPlanet={handlePlanetChange} />
       <ButtonList
-        planet={planet}
+        currentPlanet={currentPlanet}
         information={information}
         setInformation={setInformation}
       />
       {currentPlanet && (
         <>
           <MainHeroContainer
-            planet={planet}
             information={information}
             setInformation={setInformation}
             currentPlanet={currentPlanet}
